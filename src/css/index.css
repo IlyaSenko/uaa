@@ -1,0 +1,29 @@
+.name {
+  text-transform: uppercase !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.site-name {
+  height: 75px !important;
+}
+.navbar-header {
+  float: none !important;
+  height: 125px !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  background: yellow !important;
+}
+
+.dropdown-toggle {
+color: #007900 !important;
+
+}
+.front .main-container .row > .col-sm-6 {
+  width: 100% !important;
+}
+
+.front .col-sm-6 .view-news .views-row .image img {
+  object-fit: cover;
+  object-position: bottom left;
+}
