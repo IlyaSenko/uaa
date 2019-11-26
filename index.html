@@ -36,11 +36,14 @@
   align-items: center !important;
 }
 .site-name {
-  height: 75px !important;
+  height: 120px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navbar-header {
   float: none !important;
-  height: 125px !important;
+  height: 70px !important;
   display: flex !important;
   align-items: flex-end !important;
   background: yellow !important;
@@ -57,6 +60,48 @@ color: #007900 !important;
 .front .col-sm-6 .view-news .views-row .image img {
   object-fit: cover;
   object-position: bottom left;
+}
+.dropdown-toggle {
+  color: #007900 !important;
+  padding: 43px 10px 0;
+  display: block;
+  height: 70px;
+  padding: 30px 15px 0;
+  font: normal 16px 'SourceSansPro-Semibold',Arial,sans-serif;
+}
+.menu > li:hover {
+  background: #019401;
+}
+
+.menu > li:hover > span {
+  color: white !important;
+
+}
+
+.menu > li:hover ul.dropdown-menu {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+ul.dropdown-menu {
+  background: #019401;
+  border-radius: 0;
+  padding: 20px;
+  border: none;
+}
+
+ul.dropdown-menu > li > a {
+  color: white;
+  padding: 8px 0;
+}
+ul.dropdown-menu > li > a:hover {
+  color: yellow;
+  padding: 8px 0;
+    background: #019401;
 }
 #autocomplete{border:1px solid;overflow:hidden;position:absolute;z-index:100;}#autocomplete ul{list-style:none;list-style-image:none;margin:0;padding:0;}#autocomplete li{background:#fff;color:#000;cursor:default;white-space:pre;zoom:1;}html.js input.form-autocomplete{background-image:url(/misc/throbber-inactive.png);background-position:100% center;background-repeat:no-repeat;}html.js input.throbbing{background-image:url(/misc/throbber-active.gif);background-position:100% center;}html.js fieldset.collapsed{border-bottom-width:0;border-left-width:0;border-right-width:0;height:1em;}html.js fieldset.collapsed .fieldset-wrapper{display:none;}fieldset.collapsible{position:relative;}fieldset.collapsible .fieldset-legend{display:block;}.form-textarea-wrapper textarea{display:block;margin:0;width:100%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}.resizable-textarea .grippie{background:#eee url(/misc/grippie.png) no-repeat center 2px;border:1px solid #ddd;border-top-width:0;cursor:s-resize;height:9px;overflow:hidden;}body.drag{cursor:move;}.draggable a.tabledrag-handle{cursor:move;float:left;height:1.7em;margin-left:-1em;overflow:hidden;text-decoration:none;}a.tabledrag-handle:hover{text-decoration:none;}a.tabledrag-handle .handle{background:url(/misc/draggable.png) no-repeat 6px 9px;height:13px;margin:-0.4em 0.5em;padding:0.42em 0.5em;width:13px;}a.tabledrag-handle-hover .handle{background-position:6px -11px;}div.indentation{float:left;height:1.7em;margin:-0.4em 0.2em -0.4em -0.4em;padding:0.42em 0 0.42em 0.6em;width:20px;}div.tree-child{background:url(/misc/tree.png) no-repeat 11px center;}div.tree-child-last{background:url(/misc/tree-bottom.png) no-repeat 11px center;}div.tree-child-horizontal{background:url(/misc/tree.png) no-repeat -11px center;}.tabledrag-toggle-weight-wrapper{text-align:right;}table.sticky-header{background-color:#fff;margin-top:0;}.progress .bar{background-color:#fff;border:1px solid;}.progress .filled{background-color:#000;height:1.5em;width:5px;}.progress .percentage{float:right;}.ajax-progress{display:inline-block;}.ajax-progress .throbber{background:transparent url(/misc/throbber-active.gif) no-repeat 0px center;float:left;height:15px;margin:2px;width:15px;}.ajax-progress .message{padding-left:20px;}tr .ajax-progress .throbber{margin:0 2px;}.ajax-progress-bar{width:16em;}.container-inline div,.container-inline label{display:inline;}.container-inline .fieldset-wrapper{display:block;}.nowrap{white-space:nowrap;}html.js .js-hide{display:none;}.element-hidden{display:none;}.element-invisible{position:absolute !important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);overflow:hidden;height:1px;}.element-invisible.element-focusable:active,.element-invisible.element-focusable:focus{position:static !important;clip:auto;overflow:visible;height:auto;}.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}* html .clearfix{height:1%;}*:first-child + html .clearfix{min-height:1%;}
 #views-slideshow-form-wrapper .form-item.dependent-options{padding-left:5px;}#views-slideshow-form-wrapper .vs-dependent{padding-left:30px;}
@@ -97,49 +142,29 @@ body{color:#454a48}.empty-title{padding:0!important;margin:0!important;}div[clas
     	</div>
 
 	<div class="navbar-header">
-		<div class="container">
-							  <div class="region region-menu-left">
-    <div id="block-menu-block-1" class="block block-menu-block clearfix">
+		<div class="container">  <ul class="menu nav"><li class="first expanded menu-mlid-671 dropdown"><span title="" class="dropdown-toggle nolink">Про Нас<span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf menu-mlid-677"><a href="/mayor">Міський голова</a></li>
+    <li class="leaf has-children menu-mlid-678"><a href="/secretary">Керівництво</a></li>
+    <li class="leaf menu-mlid-679"><a href="/members-executive-committee" title="">Місія та Цілі</a></li>
+    <li class="last leaf has-children menu-mlid-680"><a href="/vice-mayor" title="">Членство в УАА</a></li>
+    </ul></li>
+    <li class="expanded menu-mlid-672 dropdown"><span title="" class="dropdown-toggle nolink">Діяльність <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf menu-mlid-681"><a href="/historical-background">Історична довідка</a></li>
+    <li class="leaf menu-mlid-682"><a href="/symbols">ПодіЇ</a></li>
+    <li class="leaf menu-mlid-683"><a href="/sister-city" title="">Звіти</a></li>
+    </ul></li>
+    <li class="last expanded menu-mlid-673 dropdown"><span title="" class="dropdown-toggle nolink">Аграрні Новини <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf menu-mlid-685"><a href="/regulation-city-council">Регламент Бучанської міської ради</a></li>
+    <li class="leaf menu-mlid-686"><a href="/regulations-executive-committee-city-council">Україна</a></li>
+    <li class="leaf menu-mlid-687"><a href="/agenda-city-council" title="">Світ</a></li>
+    </ul></li><li class="first expanded menu-mlid-709 dropdown"><span title="" class="dropdown-toggle nolink">Законодавство в Аграрній Сфері <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf has-children menu-mlid-710"><a href="/public-council" title="">Громадська рада</a></li>
+  <li class="leaf menu-mlid-713"><a href="/public-organizations" title="">Зміни в Законодавстві </a></li>
+  <li class="leaf menu-mlid-714"><a href="/political-parties" title="">Нове Законодавство </a></li>
+  </ul></li>
+  <li class="last expanded menu-mlid-721 dropdown"><span title="" class="dropdown-toggle nolink">Контакти <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf menu-mlid-722"><a href="/contacts" title="">Міська рада </a></li>
+  <li class="leaf menu-mlid-723"><a href="/city-telephone-directory" title="">Телефонний довідник міста </a></li>
+  <li class="last leaf menu-mlid-724"><a href="/electronic-appeal" title="">Електронне звернення </a></li>
+  </ul></li>
+  </ul>
 
-  <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-1">
-  <ul class="menu nav"><li class="first expanded menu-mlid-671 dropdown"><span title="" class="dropdown-toggle nolink">Про Нас<span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf menu-mlid-677"><a href="/mayor">Міський голова</a></li>
-<li class="leaf has-children menu-mlid-678"><a href="/secretary">Керівництво</a></li>
-<li class="leaf menu-mlid-679"><a href="/members-executive-committee" title="">Місія та Цілі</a></li>
-<li class="last leaf has-children menu-mlid-680"><a href="/vice-mayor" title="">Членство в УАА</a></li>
-</ul></li>
-<li class="expanded menu-mlid-672 dropdown"><span title="" class="dropdown-toggle nolink">Діяльність <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf menu-mlid-681"><a href="/historical-background">Історична довідка</a></li>
-<li class="leaf menu-mlid-682"><a href="/symbols">ПодіЇ</a></li>
-<li class="leaf menu-mlid-683"><a href="/sister-city" title="">Звіти</a></li>
-</ul></li>
-<li class="last expanded menu-mlid-673 dropdown"><span title="" class="dropdown-toggle nolink">Аграрні Новини <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf menu-mlid-685"><a href="/regulation-city-council">Регламент Бучанської міської ради</a></li>
-<li class="leaf menu-mlid-686"><a href="/regulations-executive-committee-city-council">Україна</a></li>
-<li class="leaf menu-mlid-687"><a href="/agenda-city-council" title="">Світ</a></li>
-</ul></li>
-</ul></div>
-</div>
-  </div>
 
-							<div class="logo-header">
-					<a class="logo navbar-btn pull-left" href="/" title="Головна">
-						<!-- <img src="http://www.bucha-rada.gov.ua/sites/all/themes/custom_bootstrap/logo.png" alt="Головна" /> -->
-					</a>
-				</div>
-
-							  <div class="region region-menu-right">
-    <div id="block-menu-block-2" class="block block-menu-block clearfix">
-
-  <div class="menu-block-wrapper menu-block-2 menu-name-menu-main-menu-right parent-mlid-0 menu-level-1">
-  <ul class="menu nav"><li class="first expanded menu-mlid-709 dropdown"><span title="" class="dropdown-toggle nolink">Законодавство в Аграрній Сфері <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf has-children menu-mlid-710"><a href="/public-council" title="">Громадська рада</a></li>
-<li class="leaf menu-mlid-713"><a href="/public-organizations" title="">Зміни в Законодавстві </a></li>
-<li class="leaf menu-mlid-714"><a href="/political-parties" title="">Нове Законодавство </a></li>
-</ul></li>
-<li class="last expanded menu-mlid-721 dropdown"><span title="" class="dropdown-toggle nolink">Контакти <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf menu-mlid-722"><a href="/contacts" title="">Міська рада </a></li>
-<li class="leaf menu-mlid-723"><a href="/city-telephone-directory" title="">Телефонний довідник міста </a></li>
-<li class="last leaf menu-mlid-724"><a href="/electronic-appeal" title="">Електронне звернення </a></li>
-</ul></li>
-</ul></div>
-</div>
-  </div>
 					</div>
   </div>
 </header>
@@ -393,41 +418,23 @@ body{color:#454a48}.empty-title{padding:0!important;margin:0!important;}div[clas
 <div id="block-menu-block-1--2" class="block block-menu-block clearfix">
 
   <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-1">
-  <ul class="menu nav"><li class="first expanded menu-mlid-671 dropdown"><span title="" class="dropdown-toggle nolink">Міська влада <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf menu-mlid-677"><a href="/mayor">Міський голова</a></li>
-<li class="leaf has-children menu-mlid-678"><a href="/secretary">Міська рада</a></li>
-<li class="leaf menu-mlid-679"><a href="/members-executive-committee" title="">Члени виконавчого комітету</a></li>
-<li class="last leaf has-children menu-mlid-680"><a href="/vice-mayor" title="">Структура виконавчих органів</a></li>
+  <ul class="menu nav"><li class="first expanded menu-mlid-671 dropdown"><span title="" class="dropdown-toggle nolink">Про Нас <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf menu-mlid-677"><a href="/mayor">Керівництво</a></li>
+<li class="leaf has-children menu-mlid-678"><a href="/secretary">Місія та Цілі</a></li>
+<li class="leaf menu-mlid-679"><a href="/members-executive-committee" title="">Членство в УАА</a></li>
 </ul></li>
-<li class="expanded menu-mlid-672 dropdown"><span title="" class="dropdown-toggle nolink">Про місто <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf menu-mlid-681"><a href="/historical-background">Історична довідка</a></li>
-<li class="leaf menu-mlid-682"><a href="/symbols">Символіка міста</a></li>
-<li class="leaf menu-mlid-683"><a href="/sister-city" title="">Міста-побратими </a></li>
-<li class="last leaf menu-mlid-684"><a href="/honorary-citizens" title="">Почесні громадяни </a></li>
+<li class="expanded menu-mlid-672 dropdown"><span title="" class="dropdown-toggle nolink">Діяльність <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf menu-mlid-681"><a href="/historical-background">Події</a></li>
+<li class="leaf menu-mlid-682"><a href="/symbols">Звіти</a></li>
 </ul></li>
-<li class="last expanded menu-mlid-673 dropdown"><span title="" class="dropdown-toggle nolink">Нормативні документи <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf menu-mlid-685"><a href="/regulation-city-council">Регламент Бучанської міської ради</a></li>
-<li class="leaf menu-mlid-686"><a href="/regulations-executive-committee-city-council">Регламент виконавчого комітету Бучанської міської ради</a></li>
-<li class="leaf menu-mlid-687"><a href="/agenda-city-council" title="">Порядок денний сесій міської ради</a></li>
-<li class="leaf menu-mlid-688"><a href="/draft-decisions" title="">Проекти рішень</a></li>
-<li class="leaf menu-mlid-689"><a href="/order-mayor" title="">Розпорядження міського голови </a></li>
-<li class="leaf menu-mlid-690"><a href="/decision-executive-committee" title="">Рішення виконавчого комітету </a></li>
-<li class="last leaf menu-mlid-691"><a href="/decision-city-council" title="">Рішення Бучанської міської ради </a></li>
+<li class="last expanded menu-mlid-673 dropdown"><span title="" class="dropdown-toggle nolink">Аграрні Новини <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf menu-mlid-685"><a href="/regulation-city-council">Україна</a></li>
+<li class="leaf menu-mlid-686"><a href="/regulations-executive-committee-city-council">Світ</a></li>
 </ul></li>
 </ul></div>
 </div>
 <div id="block-menu-block-2--2" class="block block-menu-block clearfix">
 
   <div class="menu-block-wrapper menu-block-2 menu-name-menu-main-menu-right parent-mlid-0 menu-level-1">
-  <ul class="menu nav"><li class="first expanded menu-mlid-709 dropdown"><span title="" class="dropdown-toggle nolink">Громадська діяльність <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf has-children menu-mlid-710"><a href="/public-council" title="">Громадська рада</a></li>
-<li class="leaf menu-mlid-713"><a href="/public-organizations" title="">Громадські організації </a></li>
-<li class="leaf menu-mlid-714"><a href="/political-parties" title="">Політичні партії </a></li>
-<li class="last leaf menu-mlid-715"><a href="/coordination-council" title="">Координаційна рада при виконавчому комітеті міської ради </a></li>
-</ul></li>
-<li class="expanded menu-mlid-716 dropdown"><span title="" class="dropdown-toggle nolink">Публічна інформація <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf menu-mlid-717"><a href="/regulatory-legal-acts" title="">Нормативно-правові акти </a></li>
-<li class="leaf menu-mlid-718"><a href="/requests-for-information" title="">Порядок складання, подання та опрацювання запитів на інформацію</a></li>
-<li class="leaf menu-mlid-719"><a href="/list-information" title="">Перелік інформації, яка підлягає обов’язковому оприлюдненню</a></li>
-<li class="leaf menu-mlid-720"><a href="/lustration" title="">Люстрація </a></li>
-<li class="leaf menu-mlid-1438"><a href="http://bucha-rada.gov.ua/content/vidomosti-zaznacheni-u-deklaraciyi-za-2015r" title="">Відомості, зазначені у декларації за 2015 р.</a></li>
-<li class="leaf menu-mlid-1440"><a href="http://bucha-rada.gov.ua/content/detalni-plany-terytoriy" title="">Детальні плани територій</a></li>
-<li class="last leaf menu-mlid-1441"><a href="http://bucha-rada.gov.ua/content/plan-zonuvannya-terytoriyi-mista-bucha" title="">План зонування території міста Буча</a></li>
+  <ul class="menu nav"><li class="first expanded menu-mlid-709 dropdown"><span title="" class="dropdown-toggle nolink">Законодавство в Аграрній Сфері <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf has-children menu-mlid-710"><a href="/public-council" title="">Зміни в Законодавстві</a></li>
+<li class="leaf menu-mlid-713"><a href="/public-organizations" title="">Нове Законодавство </a></li>
 </ul></li>
 <li class="last expanded menu-mlid-721 dropdown"><span title="" class="dropdown-toggle nolink">Контакти <span class="caret"></span></span><ul class="dropdown-menu"><li class="first leaf menu-mlid-722"><a href="/contacts" title="">Міська рада </a></li>
 <li class="leaf menu-mlid-723"><a href="/city-telephone-directory" title="">Телефонний довідник міста </a></li>
