@@ -5,11 +5,14 @@
   align-items: center !important;
 }
 .site-name {
-  height: 75px !important;
+  height: 120px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navbar-header {
   float: none !important;
-  height: 125px !important;
+  height: 70px !important;
   display: flex !important;
   align-items: flex-end !important;
   background: yellow !important;
@@ -27,3 +30,21 @@ color: #007900 !important;
   object-fit: cover;
   object-position: bottom left;
 }
+
+/* .navbar-header .container {
+      width: 900px !important;
+} */
+
+/* .region-menu-left {
+  max-width: none !important;
+}
+
+
+.region-menu-right {
+  max-width: none !important;
+}
+
+
+.navbar-header .region .menu > li > span {
+  padding: 43px 75px 0 !important;
+} */
